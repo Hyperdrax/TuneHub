@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>TuneHub</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="/img/TuneHublogo.webp" alt="">
+            <div class="logo_name">TuneHub</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-stats' ></i>
+                    <span class="links_name">Stats</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-collection' ></i>
+                    <span class="links_name">Collection</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-playlist' ></i>
+                    <span class="links_name">Playlist</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-discord-alt' ></i>
+                    <span class="links_name">Discord</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Setting</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <header>
+            <div class="header">
+                <a href="#">Hydrax</a>
+            </div>
+        </header>
+        <div class="mainBody">
+            <div class="bigText">
+                <h1>TuneHub</h1>
+                <p>For profesionell Music Listeners</p>
+            </div>
+            <div class="divider"></div>
+                <div class="bigButtonsBox">
+                    <a class="bbGetStarted">Get Started</a>
+                    <a class="bbSignUp">Sign Up</a>
+                    <a class="bbLogin">Log In</a>
+                </div>
+            <div class="divider"></div>
+            <div class="basicInfo">
+                <h2>About</h2>
+                <p> 
+                    TuneHub is your Place for Music. It allows you to rate Albums/Singles and to share the rating 
+                    directly with your friends or fans. It also features a Playlist Manager, that can create, edit 
+                    and save your Playlists. The data we get out of the ratings, will be shared with you.
+                </p>
+            </div>
+            <div class="divider"></div>
+            <div class="infoContainer">
+                <div class="ibox infoBox1">
+                    <h2>Collection</h2>
+                    <p>Rate your Favorite Music and Share it.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div class="ibox infoBox2">
+                    <h2>Stats</h2>
+                    <p>Data that we colleted</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div class="ibox infoBox3">
+                    <h2>Playlists</h2>
+                    <p>Edit or Save Playlists</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div class="ibox infoBox4">
+                    <h2>Dashboard</h2>
+                    <a href="">Learn more</a>
+                </div>
+                <div class="ibox infoBox5">
+                    <h2>Discord</h2>
+                    <a href="">Learn more</a>
+                </div>
+                <div class="ibox infoBox6">
+                    <h2>Settings</h2>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="footer">
+                <a href="#">Contact</a>
+                <a href="#">Support</a>
+                <a href="#">Github</a>
+                <a href="#">Terms</a>
+                <a href="#">Security</a>
+                <a href="#">Privacy</a>
+                <p>Version : v1.00.00</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
